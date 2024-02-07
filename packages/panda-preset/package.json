@@ -1,0 +1,51 @@
+{
+  "name": "@pandaria/panda-preset",
+  "description": "Panda CSS and React Aria UI components",
+  "version": "0.0.0",
+  "keywords": [
+    "panda",
+    "pandacss",
+    "react-aria",
+    "react-aria-components"
+  ],
+  "license": "MIT",
+  "author": "Jeremy Nguyen <hi@jeremy.ng> (https://jeremy.ng)",
+  "repository": "github:jeremy-code/pandaria",
+  "homepage": "https://github.com/jeremy-code/pandaria#readme",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint ."
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.30.2",
+    "@pandacss/types": "^0.30.2",
+    "@pandaria/eslint-config": "workspace:^",
+    "@pandaria/tsconfig": "workspace:^",
+    "@types/eslint": "^8.56.2",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">0.22.0",
+    "@pandacss/types": ">0.22.0"
+  }
+}

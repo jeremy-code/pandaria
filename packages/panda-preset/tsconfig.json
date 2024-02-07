@@ -1,0 +1,9 @@
+{
+  "extends": "@pandaria/tsconfig/base",
+  "compilerOptions": {
+    // https://github.com/egoist/tsup/issues/571
+    // dts error when building with tsup with composite: true
+    "composite": false
+  },
+  "include": ["src/**/*"]
+}
