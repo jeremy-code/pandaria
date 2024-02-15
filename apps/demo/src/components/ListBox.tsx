@@ -2,8 +2,8 @@
 
 import { ListBox as AriaListBox, ListBoxItem as AriaListBoxItem } from "react-aria-components";
 
-import { HTMLStyledProps, styled } from "../../styled-system/jsx";
-import { listBox, listBoxItem } from "../../styled-system/recipes";
+import { HTMLStyledProps, styled } from "@/styled/jsx";
+import { listBox, listBoxItem } from "@/styled/recipes";
 
 export const ListBox = styled(AriaListBox, listBox);
 export type ListBoxProps = HTMLStyledProps<typeof ListBox>;

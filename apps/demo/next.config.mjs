@@ -9,7 +9,6 @@ const nextConfig = {
   transpilePackages: ["@pandaria/panda-preset"],
   experimental: {
     ppr: true,
-    taint: true,
     webpackBuildWorker: true,
   },
 };

@@ -10,7 +10,6 @@ const nextConfig = {
   logging: { fetches: { fullUrl: true } },
   experimental: {
     ppr: true,
-    taint: true,
     webpackBuildWorker: true,
   },
 };
