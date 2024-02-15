@@ -5,7 +5,7 @@
   "scripts": {
     "prepack": "panda codegen",
     "dev": "next dev --port 3001",
-    "build": "next build",
+    "build": "yarn prepack & next build",
     "build:analyze": "cross-env ANALYZE=true yarn build",
     "start": "next start",
     "lint": "eslint --cache --cache-location .next/cache/eslint/ ."

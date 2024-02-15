@@ -6,7 +6,7 @@ const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === "tr
 const nextConfig = {
   poweredByHeader: false,
   logging: { fetches: { fullUrl: true } },
-  transpilePackages: ["@pandaria/panda-preset"],
+  transpilePackages: ["@pandaria/panda-preset", "styled-system"],
   experimental: {
     ppr: true,
     webpackBuildWorker: true,

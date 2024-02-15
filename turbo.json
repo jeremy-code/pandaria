@@ -2,9 +2,6 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
-    "prepack": {
-      "dependsOn": ["^prepack"]
-    },
     "build": {
       "dependsOn": ["^build"],
       "env": ["ANALYZE"],
