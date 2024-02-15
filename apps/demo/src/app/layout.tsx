@@ -2,10 +2,15 @@ import React, { type ReactNode } from "react";
 
 import "./globals.css";
 
+import { Providers } from "../components/Providers";
+
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html suppressHydrationWarning>
+      <head />
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 };

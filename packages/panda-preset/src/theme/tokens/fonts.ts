@@ -1,3 +1,5 @@
+import { Token } from "@pandacss/types";
+
 export const fonts = {
   sans: { value: "{fonts.system}" },
   serif: { value: "{fonts.systemSerif}" },
@@ -11,4 +13,4 @@ export const fonts = {
   systemMono: {
     value: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
   },
-};
+} satisfies Record<string, Token<string>>;

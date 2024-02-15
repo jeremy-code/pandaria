@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 
-import { Button, ListBox, ListBoxItem } from "../components";
+import { Button, Input, ListBox, ListBoxItem, ToggleButton } from "../components";
 
 const Page = () => {
   return (
@@ -22,6 +22,10 @@ const Page = () => {
         <ListBoxItem>Panda</ListBoxItem>
         <ListBoxItem>Snake</ListBoxItem>
       </ListBox>
+
+      <Input />
+
+      <ToggleButton>Toggle</ToggleButton>
     </div>
   );
 };

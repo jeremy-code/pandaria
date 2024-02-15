@@ -35,8 +35,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.30.2",
-    "@pandacss/types": "^0.30.2",
+    "@pandacss/dev": "^0.31.0",
+    "@pandacss/types": "^0.31.0",
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
     "@types/eslint": "^8.56.2",
@@ -47,5 +47,8 @@
   "peerDependencies": {
     "@pandacss/dev": ">0.22.0",
     "@pandacss/types": ">0.22.0"
+  },
+  "dependencies": {
+    "deepmerge-ts": "^5.1.0"
   }
 }
