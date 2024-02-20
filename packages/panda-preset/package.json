@@ -1,7 +1,7 @@
 {
   "name": "@pandaria/panda-preset",
+  "version": "0.0.1",
   "description": "Panda CSS and React Aria UI components",
-  "version": "0.0.0",
   "keywords": [
     "panda",
     "pandacss",
@@ -9,37 +9,46 @@
     "react-aria-components"
   ],
   "license": "MIT",
-  "author": "Jeremy Nguyen <hi@jeremy.ng> (https://jeremy.ng)",
+  "homepage": "https://pandaria.dev",
+  "bugs": "https://github.com/jeremy-code/pandaria/issues",
   "repository": "github:jeremy-code/pandaria",
-  "homepage": "https://github.com/jeremy-code/pandaria#readme",
+  "author": "Jeremy Nguyen <hi@jeremy.ng> (https://jeremy.ng)",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+  "clean-package": {
+    "replace": {
+      "main": "dist/index.js",
+      "module": "dist/index.mjs",
+      "types": "dist/index.d.ts",
+      "exports": {
+        ".": {
+          "types": "dist/index.d.ts",
+          "import": "dist/index.mjs",
+          "require": "dist/index.js"
+        }
+      }
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "deepmerge-ts": "^5.1.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.31.0",
-    "@pandacss/types": "^0.31.0",
+    "@pandacss/dev": "^0.32.0",
+    "@pandacss/types": "^0.32.0",
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
     "@types/eslint": "^8.56.2",
+    "clean-package": "^2.2.0",
     "eslint": "^8.56.0",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
@@ -48,7 +57,7 @@
     "@pandacss/dev": ">0.22.0",
     "@pandacss/types": ">0.22.0"
   },
-  "dependencies": {
-    "deepmerge-ts": "^5.1.0"
+  "publishConfig": {
+    "access": "public"
   }
 }

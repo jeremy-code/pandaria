@@ -25,7 +25,6 @@ export const button = defineRecipe({
         bg: {
           base: "colorPalette.bg",
           _ariaHover: "colorPalette.bg.1",
-          _ariaActive: "colorPalette.bg.2",
         },
         color: "colorPalette.fg",
       },
@@ -35,7 +34,6 @@ export const button = defineRecipe({
         bg: {
           base: "transparent",
           _ariaHover: "colorPalette.fg",
-          _ariaActive: "colorPalette.fg.1",
         },
         color: "colorPalette.bg",
       },
@@ -43,7 +41,6 @@ export const button = defineRecipe({
         bg: {
           base: "colorPalette.fg",
           _ariaHover: "colorPalette.fg.1",
-          _ariaActive: "colorPalette.fg.2",
         },
         color: "colorPalette.bg",
       },

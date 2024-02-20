@@ -17,10 +17,6 @@ export const toggleButton = deepmerge(
               bg: "colorPalette.600",
               color: "colorPalette.200",
             },
-            _ariaActive: {
-              bg: "colorPalette.700",
-              color: "colorPalette.200",
-            },
           },
         },
       },
