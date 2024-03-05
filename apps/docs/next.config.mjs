@@ -9,7 +9,6 @@ const nextConfig = {
   poweredByHeader: false,
   logging: { fetches: { fullUrl: true } },
   experimental: {
-    ppr: true,
     webpackBuildWorker: true,
   },
 };

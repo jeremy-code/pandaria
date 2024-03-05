@@ -8,7 +8,6 @@ const nextConfig = {
   logging: { fetches: { fullUrl: true } },
   transpilePackages: ["@pandaria/panda-preset", "styled-system"],
   experimental: {
-    ppr: true,
     webpackBuildWorker: true,
   },
 };

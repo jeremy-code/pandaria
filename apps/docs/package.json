@@ -10,22 +10,22 @@
     "lint": "eslint --cache --cache-location .next/cache/eslint/ ."
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.1.1-canary.62",
-    "next": "^14.1.1-canary.62",
-    "nextra": "^2.13.3",
-    "nextra-theme-docs": "^2.13.3",
+    "@next/bundle-analyzer": "^14.1.2",
+    "next": "^14.1.2",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
-    "@types/eslint": "^8.56.2",
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.57",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.62",
     "@types/react-dom": "^18.2.19",
     "cross-env": "^7.0.3",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "typescript": "^5.3.3"
   }
 }

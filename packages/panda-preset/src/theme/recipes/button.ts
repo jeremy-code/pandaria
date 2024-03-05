@@ -33,7 +33,7 @@ export const button = defineRecipe({
         borderColor: "colorPalette.bg",
         bg: {
           base: "transparent",
-          _ariaHover: "colorPalette.fg",
+          _ariaHover: "colorPalette.fg/80",
         },
         color: "colorPalette.bg",
       },

@@ -43,13 +43,13 @@
     "deepmerge-ts": "^5.1.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.32.0",
-    "@pandacss/types": "^0.32.0",
+    "@pandacss/dev": "^0.33.0",
+    "@pandacss/types": "^0.33.0",
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
-    "@types/eslint": "^8.56.2",
+    "@types/eslint": "^8.56.5",
     "clean-package": "^2.2.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
