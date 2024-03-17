@@ -25,7 +25,12 @@ const colors = COLORS.reduce(
 export const semanticTokens = defineSemanticTokens({
   global: {
     color: {
-      border: { value: { base: "{colors.gray.100}", _dark: "{colors.gray.700}" } },
+      border: {
+        value: {
+          base: "{colors.neutral.200}",
+          _dark: "color-mix(in srgb, {colors.white} 10%, transparent)",
+        },
+      },
     },
     font: {
       body: { value: "{fonts.sans}" },
@@ -34,17 +39,13 @@ export const semanticTokens = defineSemanticTokens({
   colors: {
     ...colors,
     bg: {
-      canvas: { value: { base: "{colors.neutral.100}", _dark: "{colors.neutral.900}" } },
-      default: { value: { base: "{colors.neutral.100}", _dark: "{colors.neutral.900}" } },
-      muted: { value: { base: "{colors.neutral.200}", _dark: "{colors.neutral.800}" } },
-      emphasized: { value: { base: "{colors.neutral.300}", _dark: "{colors.neutral.700}" } },
-      disabled: { value: { base: "{colors.neutral.400}", _dark: "{colors.neutral.600}" } },
-    },
-    fg: {
-      default: { value: { base: "{colors.neutral.900}", _dark: "{colors.neutral.100}" } },
-      muted: { value: { base: "{colors.neutral.800}", _dark: "{colors.neutral.200}" } },
-      emphasized: { value: { base: "{colors.neutral.700}", _dark: "{colors.neutral.300}" } },
-      disabled: { value: { base: "{colors.neutral.600}", _dark: "{colors.neutral.400}" } },
+      canvas: { value: { base: "{colors.neutral.100}", _dark: "{colors.neutral.950}" } },
+      default: {
+        value: {
+          base: "{colors.white}",
+          _dark: "color-mix(in srgb, {colors.white} 5%, transparent)",
+        },
+      },
     },
   },
 });
