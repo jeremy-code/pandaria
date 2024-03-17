@@ -14,13 +14,14 @@
   "license": "MIT",
   "author": "Jeremy Nguyen <hi@jeremy.ng> (https://jeremy.ng)",
   "repository": "github:jeremy-code/pandaria",
-  "homepage": "https://github.com/jeremy-code/pandaria#readme",
+  "homepage": "https://pandaria.dev",
   "scripts": {
     "prepack": "husky",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier '**/*.{js,jsx,ts,tsx,json}' --write --ignore-path .gitignore"
+    "format": "prettier '**/*.{js,jsx,ts,tsx,json}' --write",
+    "format:check": "prettier '**/*.{js,jsx,ts,tsx,json}'"
   },
   "workspaces": [
     "apps/*",
@@ -30,7 +31,7 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
     "@types/eslint": "^8.56.5",
@@ -38,13 +39,13 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "turbo": "^1.12.4",
-    "typescript": "^5.3.3"
+    "turbo": "^1.12.5",
+    "typescript": "^5.4.2"
   },
-  "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781",
   "dependenciesMeta": {
     "@ianvs/prettier-plugin-sort-imports@4.1.1": {
       "unplugged": true
     }
-  }
+  },
+  "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781"
 }

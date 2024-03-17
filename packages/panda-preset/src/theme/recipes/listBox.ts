@@ -9,7 +9,7 @@ export const listBox = defineRecipe({
     p: 1,
     border: "default",
     borderRadius: "md",
-    // bgColor: "white",
+    bgColor: "bg.default",
     outline: "none",
     width: "lg",
     colorPalette: "blue",
@@ -28,7 +28,7 @@ export const listBoxItem = defineRecipe({
     fontSize: "md",
     display: "flex",
     flexDir: "column",
-    _ariaHover: { bgColor: "gray.fg" },
+    _ariaHover: { bgColor: "colorPalette.fg/40" },
     _selected: {
       _ariaFocusVisible: { outline: "auto" },
       bgColor: "colorPalette.bg",
