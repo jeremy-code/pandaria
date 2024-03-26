@@ -35,6 +35,16 @@
           "types": "dist/index.d.ts",
           "import": "dist/index.mjs",
           "require": "dist/index.js"
+        },
+        "./utils": {
+          "types": "dist/utils/index.d.ts",
+          "import": "dist/utils/index.mjs",
+          "require": "dist/utils/index.js"
+        },
+        "./dist": {
+          "types": "dist/index.d.ts",
+          "import": "dist/index.mjs",
+          "require": "dist/index.js"
         }
       }
     }
@@ -43,15 +53,15 @@
     "deepmerge-ts": "^5.1.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.35.0",
-    "@pandacss/types": "^0.35.0",
+    "@pandacss/dev": "^0.36.0",
+    "@pandacss/types": "^0.36.0",
     "@pandaria/eslint-config": "workspace:^",
     "@pandaria/tsconfig": "workspace:^",
-    "@types/eslint": "^8.56.5",
+    "@types/eslint": "^8.56.6",
     "clean-package": "^2.2.0",
     "eslint": "^8.57.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "peerDependencies": {
     "@pandacss/dev": ">0.22.0",

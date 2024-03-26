@@ -1,6 +1,6 @@
 import type { ExtendableConditions } from "@pandacss/types";
 
-const ariaConditions = {
+const ARIA_CONDITIONS = {
   ariaHover: "[data-hovered]",
   ariaFocus: "[data-focused]",
   ariaPressed: "[data-pressed]",
@@ -14,7 +14,7 @@ const ariaConditions = {
 
 export const conditions = {
   extend: {
-    ...Object.entries(ariaConditions).reduce(
+    ...Object.entries(ARIA_CONDITIONS).reduce(
       (acc, [key, value]) => ({ ...acc, [key]: `&:where([data-rac])${value}` }),
       {}
     ),
